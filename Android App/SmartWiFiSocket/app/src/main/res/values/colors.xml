@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="colorPrimary">#3F51B5</color> -->
+    <color name="colorPrimary">#1D2965</color>                    <!-- Space Cadet #1D2951 modified to 1D2965 -->
+
+    <!-- https://stackoverflow.com/questions/22192291/how-to-change-the-status-bar-color-in-android -->
+    <!-- <color name="colorPrimaryDark">#303F9F</color> -->
+    <color name="colorPrimaryDark">@color/colorPrimary</color>                    <!-- Space Cadet #1D2951 modified to 1D2965 -->
+
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="all_fragments_background_color">#FCFCF4</color>
+
+    <!--<color name="stateONBg">#00B800</color>
+    <color name="stateOFFBg">#D80000</color>-->
+    <color name="stateOffWithTimer_OffDoubleTimer_FgColor">#FFFFFF</color>
+    <color name="stateOnOffWithNoTimer_OnWithTimer_OnDoubleTimer_Disconnected_FgColor">#000000</color>
+
+    <color name="green_fg">#00A800</color>
+    <color name="red_fg">#990000</color>
+
+    <!--<color name="schedule_timer_type_normal_text_color">#000088</color>-->
+    <color name="schedule_timer_type_normal_text_color">@color/colorPrimary</color>
+    <color name="schedule_timer_type_running_text_color">@color/green_fg</color>
+</resources>

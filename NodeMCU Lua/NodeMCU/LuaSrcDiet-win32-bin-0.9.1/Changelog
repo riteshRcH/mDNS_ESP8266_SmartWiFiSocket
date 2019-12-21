@@ -1,0 +1,30 @@
+2005-08-16  Kein-Hong Man  <khman@users.sf.net>
+
+	* Version: 0.9.1
+
+2005-08-15  Kein-Hong Man  <khman@users.sf.net>
+
+	* LuaSrcDiet.lua (llex:lex): fixed buff init bug
+	* LuaSrcDiet.lua (DumpTokens): added --dump option
+
+2005-04-14  Kein-Hong Man  <khman@users.sf.net>
+
+	* LuaSrcDiet.lua: adjusted shellbang
+	* moved project to a Subversion repository
+
+2005-02-15  Kein-Hong Man  <khman@users.sf.net>
+
+	* LuaSrcDiet.lua: preliminary functional script
+	* LuaSrcDiet.lua: preliminary feature-complete
+	* README: written for preliminary release
+	* LuaSrcDiet.lua: finalized for preliminary release
+	* Version: 0.9.0
+
+2005-02-14  Kein-Hong Man  <khman@users.sf.net>
+
+	* LuaSrcDiet.lua: done modifying llex.lua for LuaSrcDiet
+	* LSDTest.lua: created
+
+2005-01-14  Kein-Hong Man  <khman@users.sf.net>
+
+	* started project

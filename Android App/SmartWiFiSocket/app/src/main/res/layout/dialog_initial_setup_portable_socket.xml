@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_weight="1.0"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:text="@string/txtview_socket_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/txtViewSocketVersionString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"/>
+
+    </TableRow>
+
+    <EditText
+        android:id="@+id/editTextInitialSetupNewPortableSocketName"
+        android:maxLength="16"
+        android:hint="@string/setup_portable_wifi_name"
+        android:digits="abcdefghijklmnopqrstuvwxyzACDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editTextPortableSocketPassword"
+        android:inputType="textPassword"
+        android:maxLength="63"
+        android:hint="@string/setup_portable_wifi_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/chkBoxShowPortableSocketPassword"
+        android:checked="false"
+        android:text="@string/setup_show_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/chkBoxSetPortableSocketSSIDHidden"
+        android:checked="false"
+        android:visibility="gone"
+        android:enabled="false"
+        android:text="@string/setup_portable_socket_ssid_as_hidden"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <CheckBox
+        android:id="@+id/chkBoxRememberPowerCuts"
+        android:checked="true"
+        android:text="@string/setup_remember_power_cuts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

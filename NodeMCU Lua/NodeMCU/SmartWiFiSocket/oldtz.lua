@@ -1,0 +1,86 @@
+local M = {}
+
+local tstart = 0
+local tend = 0
+local toffset = 0
+local thezone = nil
+
+for fname, _ in pairs(file.list())
+do
+    if fname:find("zone$") then
+        thezone = fname
+        break
+    end
+end
+
+-- no need of this function as we will have only 1 zone file in the file system, list files and get the file with extension ".zone" and assign it to thezone
+--function M.setzone(zone)
+--  thezone = zone
+--  return file.exists(zone .. ".zone")
+--end
+
+-- no need of this function as we dont require list of timezone files present in ESP
+-- no need creating a table and returning the result (table takes a lot RAM). Instead just loop through and make a concatenated string and send that
+--function M.getzones()
+--  local result = {}
+--  for fn, _ in pairs(file.list()) do
+--    local prefix = fn:match("^(.*).zone$")
+--    if prefix then
+--      table.insert(result, prefix)
+--    end
+--  end
+--  return result
+--end
+
+function load(t)
+  local z = file.open(thezone, "r")
+
+  local hdr = z:read(20)
+  local magic = struct.unpack("c4 B", hdr)
+
+  if magic == "TZif" then
+      local lens = z:read(24)
+      local ttisgmt_count, ttisdstcnt, leapcnt, timecnt, typecnt, charcnt = struct.unpack("> LLLLLL", lens)
+    
+      local times = z:read(4 * timecnt)
+      local typeindex = z:read(timecnt)
+      local ttinfos = z:read(6 * typecnt)
+    
+      z:close()
+      
+      local offset = 1
+      local tt
+      for i = 1, timecnt do
+        tt = struct.unpack(">l", times, (i - 1) * 4 + 1)
+		print(t, tt, t < tt)
+        if t < tt then
+          offset = (i - 2)
+          tend = tt
+          break
+        end
+        tstart = tt
+      end
+      
+      local tindex = struct.unpack("B", typeindex, offset + 1)
+      toffset = struct.unpack(">l", ttinfos, tindex * 6 + 1)
+  else
+      tend = 0x7fffffff
+      tstart = 0
+  end
+end
+
+function M.getoffset(t)
+  if t < tstart or t >= tend then
+    -- Ignore errors
+    local ok, msg = pcall(function ()
+        load(t)
+    end)
+    if not ok then
+      print (msg)
+    end
+  end
+
+  return toffset, tstart, tend
+end
+
+return M

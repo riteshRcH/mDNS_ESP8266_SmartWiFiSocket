@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+              android:paddingStart="?android:attr/listPreferredItemPaddingLeft"
+              android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+              android:paddingEnd="?android:attr/listPreferredItemPaddingRight"
+              android:layout_height="0dp"
+              android:layout_weight="1.0"
+              android:gravity="center_vertical"
+              android:minHeight="?android:attr/listPreferredItemHeightSmall"
+              android:layout_width="match_parent">
+
+    <TextView android:id="@+id/txtViewSocketName"
+              android:layout_weight="0.9"
+              android:layout_height="?android:attr/listPreferredItemHeightSmall"
+              android:layout_width="0dp"
+              android:gravity="center_vertical"
+              android:textAppearance="?android:attr/textAppearanceListItem" />
+
+    <ImageView android:id="@+id/imgViewIsInternetModeConfiguredIndicator"
+              android:layout_gravity="end|center_vertical"
+              android:contentDescription="@string/imgViewIsInternetModeConfiguredIndicator_Content_Description"
+              android:layout_weight="0.1"
+              android:layout_height="?android:attr/listPreferredItemHeightSmall"
+              android:layout_width="0dp"
+              android:src="@mipmap/internet_mode_configured_indicator" />
+</LinearLayout>

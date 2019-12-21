@@ -1,0 +1,4 @@
+Flask==1.0
+urllib==1.21.1
+six
+google-api-python-client

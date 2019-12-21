@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ https://developer.android.com/training/material/lists-cards.html
+ http://android-dev-tips-and-tricks.blogspot.in/2014/02/creating-card-ui.html
+ http://myandroidtuts.blogspot.in/2013/12/android-card-layout.html
+ https://www.androidhive.info/2016/05/android-working-with-card-view-and-recycler-view/
+ http://www.truiton.com/2015/03/android-cardview-example/
+ https://stackoverflow.com/questions/30751870/can-one-use-cardview-for-listView-item-and-how
+ https://www.androidhive.info/2016/01/android-working-with-recycler-view/
+-->
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewListItemScheduleTimerStatus"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="11dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="22dp"
+        android:background="@drawable/cardview_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@+id/txtViewScheduleTimerType"
+                android:text="@string/listitem_cardview_schedule_timer_type"
+                android:layout_weight="0.9"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/schedule_timer_type_normal_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnDeleteScheduleTimerEntry"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/listitem_cardview_delete_schedule_timer"
+                android:background="@android:color/transparent"
+                android:layout_weight="0.1" />
+
+        </TableRow>
+
+        <View
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TableRow
+            android:id="@+id/tableRowRecurrenceDateRange"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@+id/txtViewRecurrenceStartDate"
+                android:text="@string/listitem_cardview_recurrence_start_end_date"
+                android:maxLines="1"
+                android:gravity="end"
+                android:layout_weight="0.33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtViewRecurrenceToMsg"
+                android:text="@string/listitem_cardview_recurrence_to_msg"
+                android:maxLines="1"
+                android:gravity="center_horizontal"
+                android:layout_weight="0.33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtViewRecurrenceEndDate"
+                android:text="@string/listitem_cardview_recurrence_start_end_date"
+                android:maxLines="1"
+                android:gravity="start"
+                android:layout_weight="0.34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowDaysToRunOn"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:text="@string/Monday"
+                android:id="@+id/txtViewIsRunOnMonday"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1428"/>
+
+            <TextView
+                android:text="@string/Tuesday"
+                android:id="@+id/txtViewIsRunOnTuesday"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1428"/>
+
+            <TextView
+                android:text="@string/Wednesday"
+                android:id="@+id/txtViewIsRunOnWednesday"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1428"/>
+
+            <TextView
+                android:text="@string/Thursday"
+                android:id="@+id/txtViewIsRunOnThursday"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1428"/>
+
+            <TextView
+                android:text="@string/Friday"
+                android:id="@+id/txtViewIsRunOnFriday"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1428"/>
+
+            <TextView
+                android:text="@string/Saturday"
+                android:id="@+id/txtViewIsRunOnSaturday"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1428"/>
+
+            <TextView
+                android:text="@string/Sunday"
+                android:id="@+id/txtViewIsRunOnSunday"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.1428"/>
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/txtViewShowFutureScheduledDateTimeRecurringTime"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/listitem_cardview_futureScheduledTime_RecurringTime"/>
+
+        <TextView
+            android:id="@+id/txtViewShowDesiredScheduleState"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/stateON"/>
+
+        <TableRow
+            android:id="@+id/tableRowTimerBeforeStateDurationAfterState"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@+id/txtViewShowTimerBeforeState"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/stateON"
+                android:layout_weight="0.2"/>
+
+            <ImageView
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:src="@mipmap/right_arrow"
+                android:contentDescription="@string/listitem_cardview_right_arrow_content_description"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/txtViewShowTimerDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="0.2"/>
+
+            <ImageView
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:src="@mipmap/right_arrow"
+                android:contentDescription="@string/listitem_cardview_right_arrow_content_description"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/txtViewShowTimerAfterState"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/stateOFF"
+                android:layout_weight="0.2"/>
+
+        </TableRow>
+
+        <!-- https://stackoverflow.com/questions/39302950/android-how-to-set-checkbox-text-gravity-to-center-of-entire-control -->
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/chkBoxScheduleTimerEnabled"
+                android:text="@string/listitem_cardview_enabled"
+                android:checked="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/chkBoxSkipForToday"
+                android:text="@string/listitem_cardview_skip_for_today"
+                android:checked="false"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

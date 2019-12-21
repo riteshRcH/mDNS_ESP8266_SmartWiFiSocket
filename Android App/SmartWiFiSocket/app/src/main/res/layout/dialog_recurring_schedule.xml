@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_weight="1.0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:layout_weight="0.1"
+                android:text="@string/recurrence_range_1"/>
+
+            <CheckBox
+                android:id="@+id/chkBoxApplyRecurrenceScheduleDateRange"
+                android:text="@string/apply_recurrence_date_range"
+                android:checked="false"
+                android:layout_weight="0.9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <DatePicker
+            android:id="@+id/datePickerRecurringScheduleStartDate"
+            android:visibility="gone"
+            android:calendarViewShown="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtViewShowRecurrenceScheduleToMsg"
+            android:text="@string/recurrence_range_to"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <DatePicker
+            android:id="@+id/datePickerRecurringScheduleEndDate"
+            android:visibility="gone"
+            android:calendarViewShown="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="@string/select_days_of_week_to_run_on_2"/>
+
+        <TableRow android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:layout_weight="1.0">
+
+            <ToggleButton
+                android:id="@+id/toggleBtnRecurringScheduleMo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:textOn="@string/Monday"
+                android:textOff="@string/Monday"/>
+
+            <ToggleButton
+                android:id="@+id/toggleBtnRecurringScheduleTu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:textOn="@string/Tuesday"
+                android:textOff="@string/Tuesday"/>
+
+            <ToggleButton
+                android:id="@+id/toggleBtnRecurringScheduleWe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:textOn="@string/Wednesday"
+                android:textOff="@string/Wednesday"/>
+
+            <ToggleButton
+                android:id="@+id/toggleBtnRecurringScheduleTh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:textOn="@string/Thursday"
+                android:textOff="@string/Thursday"/>
+
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:layout_weight="1.0">
+
+            <ToggleButton
+                android:id="@+id/toggleBtnRecurringScheduleFr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:textOn="@string/Friday"
+                android:textOff="@string/Friday"/>
+
+            <ToggleButton
+                android:id="@+id/toggleBtnRecurringScheduleSa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:textOn="@string/Saturday"
+                android:textOff="@string/Saturday"/>
+
+            <ToggleButton
+                android:id="@+id/toggleBtnRecurringScheduleSu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:textOn="@string/Sunday"
+                android:textOff="@string/Sunday"/>
+
+            <ToggleButton
+                android:id="@+id/toggleBtnRecurringScheduleAllDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:checked="false"
+                android:textOn="@string/all_days"
+                android:textOff="@string/all_days"/>
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="@string/select_recurring_time_3"/>
+
+        <TimePicker
+            android:id="@+id/timePickerRecurringSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="@string/turn_appliance_4"/>
+
+        <ToggleButton
+            android:id="@+id/toggleBtnRecurringScheduleState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"
+            android:textOff="@string/stateOFF"
+            android:textOn="@string/stateON"/>
+
+    </LinearLayout>
+</ScrollView>

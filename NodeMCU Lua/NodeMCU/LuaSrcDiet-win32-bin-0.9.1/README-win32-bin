@@ -1,0 +1,49 @@
+
+  LuaSrcDiet
+  Compresses Lua source code by removing unnecessary characters.
+
+  Copyright (c) 2005 Kein-Hong Man <khman@users.sf.net>
+  The COPYRIGHT file describes the conditions under which this
+  software may be distributed (basically a Lua 5-style license.)
+
+  http://luaforge.net/projects/luasrcdiet/
+  (TODO) http://www.geocities.com/keinhong/luasrcdiet.html
+
+--
+
+DESCRIPTION
+
+LuaSrcDiet.exe is a Win32 binary stand-alone version of LuaSrcDiet.lua.
+Note that an executable binary will not allow one to tweak the
+LuaSrcDiet script, or to make fixes or add features. But it is
+convenient for people who may not have a Lua 5 command-line stand-alone
+binary handy.
+
+Please see README for more information on how to use LuaSrcDiet.
+
+For the examples in the README, instead of "lua LuaSrcDiet.lua ..." you
+just need to run it as "LuaSrcDiet ...", e.g.
+
+    >LuaSrcDiet --read-only LuaSrcDiet.lua
+
+If you need more than an executable, download the source (script)
+distribution.
+
+--
+
+INTERNALS
+
+LuaSrcDiet.exe is a UPX-compressed executable, actually a very basic
+embedding of Lua, which is compiled and linked statically into the
+executable itself. The LuaSrcDiet.lua script is embedded as a text
+string, which the embedded Lua interpreter will compile and run. It's
+kinda a no-brainer implementation of a stand-alone executable of a Lua
+script.
+
+--
+
+Enjoy!!
+
+Kein-Hong Man (esq.)
+Kuala Lumpur
+Malaysia 20050216

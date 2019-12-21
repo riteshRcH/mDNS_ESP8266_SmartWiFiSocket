@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="in.co.unifytech.socket.SmartWiFiSocketActivity">
+
+    <TableRow
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtViewShowLastUpdatedDetailsHeaders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="6"
+            android:text="@string/last_updated_no_socket_headers" />
+
+        <TextView
+            android:id="@+id/txtViewShowLastUpdatedDetails"
+            android:text="@string/last_updated_no_socket_details"
+            android:maxLines="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnChangeState"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/state_change_btn_state_disconnected"
+        android:textSize="20sp"
+        android:text="@string/stateDisconnected"/>
+
+</RelativeLayout>

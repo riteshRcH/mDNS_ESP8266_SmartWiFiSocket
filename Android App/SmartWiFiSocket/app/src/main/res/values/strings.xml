@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">Beta-Smart WiFi Socket</string>
+
+    <string name="servers_client_id">173355727617-gh25d49d657nvi3nu1s1v0upsh0ug050.apps.googleusercontent.com</string>
+
+    <string-array name="setup_new_socket_types">
+        <item>Fixed Socket\n(needs external WiFi)</item>
+        <item>Portable Socket\n(creates its own WiFi)</item>
+    </string-array>
+    <string name="last_updated_no_socket_headers">Last Updated</string>
+    <string name="last_updated_no_socket_details"> : NA</string>
+    <string name="last_updated_fixed_socket_details_headers">Last Updated\nConnected To\nTimeZone\nSocket Version\nRemember Power Cuts</string>
+    <string name="last_updated_fixed_socket_internet_mode_details_headers">Last Updated\nTimeZone\nLast Updated By\nSocket Version\nSocket Refresh</string>
+    <string name="last_updated_fixed_socket_internet_mode_details_headers_show_last_update_action_too">Last Updated\nTimeZone\nLast Updated By\nLast Update Action\nSocket Version\nSocket Refresh</string>
+    <string name="last_updated_portable_socket_details_headers_plain">Last Updated\nSocket Version</string>
+    <string name="last_updated_portable_socket_details_headers_double_timer">Last Updated\nTimer1\nTimer2\nTimer1 Count\nTimer2 Count\nSocket Version</string>
+    <string name="txtview_socket_version">Socket version:</string>
+    <string name="txtview_socket_version_num">%d.0</string>
+    <string name="txtview_selected_timezone">Selected Timezone:</string>
+    <string name="NA">NA</string>
+    <string name="setup_external_wifi_password">WiFi password</string>
+    <string name="setup_socket_name">Socket/Appliance name</string>
+    <string name="setup_remember_power_cuts">Remember Power Cuts (Not for Timers)</string>
+    <string name="setup_portable_wifi_password">Socket/WiFi password</string>
+    <string name="setup_portable_wifi_name">Socket/WiFi name</string>
+    <string name="setup_portable_socket_ssid_as_hidden">Set WiFi as Hidden</string>
+    <string name="setup_show_password">Show password</string>
+
+    <string name="menu_item_wifi">Open Wi-Fi Settings</string>
+    <string name="menu_item_refresh_all_tabs_after_data_retrieval">Refresh All Tabs</string>
+    <string name="menu_item_add_new_socket">Add new Socket</string>
+    <string name="menu_item_search_available_WLAN_sockets">Search available Fixed Sockets</string>
+    <string name="menu_item_select_socket">Select Socket</string>
+    <string name="imgViewIsInternetModeConfiguredIndicator_Content_Description">i</string>
+    <string name="menu_item_forget_a_socket">Forget a Socket</string>
+    <string name="menu_item_disconnect_from_current_socket">Disconnect from current Socket</string>
+    <string name="menu_item_storage_details">Storage Details</string>
+    <string name="menu_item_storage_details_values">%s Used\n\t\t out of \n %s Total</string>
+    <string name="menu_item_factory_reset_redo_initial_setup">Factory Reset Selected Socket</string>
+    <!--<string name="menu_item_download_apply_socket_software">Change Socket version</string>-->
+
+    <string name="no_socket_selected">No Socket selected</string>
+    <string name="another_timer_already_running">Another Timer already running; please stop it or wait for it to finish</string>
+    <string name="time_not_synced_on_socket">Time not synchronized on Socket. Please check Internet connection.</string>
+    <string name="new_schedule_timer_entry_only_when_appliance_off">New Schedule/Timers can be added only when appliance is OFF</string>
+
+    <string name="stateDisconnected">Disconnected</string>
+    <string name="stateON">ON</string>
+    <string name="stateOFF">OFF</string>
+    <string name="stateON_WITH_NO_TIMER">ON</string>
+    <string name="stateOFF_WITH_NO_TIMER">OFF</string>
+    <string name="stateON_WITH_TIMER">ON WITH TIMER\n(%s)</string>
+    <string name="stateOFF_WITH_TIMER">OFF WITH TIMER\n(%s)</string>
+    <string name="stateON_DOUBLE_TIMER">ON DOUBLE TIMER</string>
+    <string name="stateOFF_DOUBLE_TIMER">OFF DOUBLE TIMER</string>
+
+    <string-array name="all_schedule_timer_types">
+        <item>One Shot Current Timer</item>
+        <item>One Shot Future Timer</item>
+        <item>Future Schedule</item>
+        <item>Recurring Schedule</item>
+        <item>Recurring Timer</item>
+    </string-array>
+    <string name="Monday">Mo</string>
+    <string name="Tuesday">Tu</string>
+    <string name="Wednesday">We</string>
+    <string name="Thursday">Th</string>
+    <string name="Friday">Fr</string>
+    <string name="Saturday">Sa</string>
+    <string name="Sunday">Su</string>
+    <string name="all_days">All</string>
+    <string name="schedule_timers_advise">It is advisable to keep at least 5 mins gap between consecutive entries</string>
+    <string name="chkBoxShowMoreOptions">Show More Options</string>
+    <string name="show_only_todays_schedule_timers">Show Only Today\'s Schedule/Timers</string>
+    <string name="btnUpdateEnabledScheduleTimers">Update Enabled Schedule/Timers</string>
+    <string name="btnRemovePastScheduleTimerEntries">Remove past Schedule/Timers</string>
+    <string name="btnUpdateRunSkipForTodaysSchedule">Update Run/Skip for Today\'s Schedule/Timers</string>
+    <string name="no_schedule_timer_entries_found">\tNo Schedule/Timer entries found</string>
+    <string name="no_schedule_timer_entries_found_for_today">No Schedule/Timer entries found for Today</string>
+    <string name="schedule_timer_unavailable_internet_mode">Schedule/Timer Entries are un-available in Internet mode</string>
+    <string name="schedule_timer_unavailable_portable_socket">Schedule/Timer Entries are un-available for Portable Sockets</string>
+    <string name="no_changes_detected">No Changes detected</string>
+    <string name="first_perform_update_enabled_schedule_timers">Please 1st perform Update enabled schedule/timers</string>
+
+    <string name="select_future_date_1">1. Select future date</string>
+    <string name="select_future_time_2">2. Select future time</string>
+    <string name="turn_appliance_3">3. Turn appliance</string>
+    <string name="before_starting_timer_turn_appliance_1">1. Before starting timer, turn appliance</string>
+    <string name="before_starting_timer_turn_appliance_3">3. Before starting timer, turn appliance</string>
+    <string name="before_starting_timer_turn_appliance_4">4. Before starting timer, turn appliance</string>
+    <string name="then_run_timer_for_following_duration_2">2. Then run timer for following duration</string>
+    <string name="then_start_toggling_for_following_duration_2">2. Then start toggling for following duration</string>
+    <string name="then_run_timer_for_following_duration_4">4. Then run timer for following duration</string>
+    <string name="then_run_timer_for_following_duration_5">5. Then run timer for following duration</string>
+    <string name="after_timer_expires_turn_appliance_3">3. After timer expires, turn appliance %s</string>
+    <string name="after_timer_expires_turn_appliance_5">5. After timer expires, turn appliance %s</string>
+    <string name="after_timer_expires_turn_appliance_6">6. After timer expires, turn appliance %s</string>
+    <string name="recurrence_range_1">1 </string>
+    <string name="apply_recurrence_date_range">Apply recurrence date range</string>
+    <string name="recurrence_range_to">to</string>
+    <string name="select_days_of_week_to_run_on_2">2. Select days of week to run on</string>
+    <string name="select_recurring_time_3">3. Select recurring time</string>
+    <string name="turn_appliance_4">4. Turn appliance</string>
+    <string name="select_timer1_duration_1">1. Select Timer 1 Duration</string>
+    <string name="select_timer1_state_2">2. For Timer1 Duration, keep the appliance</string>
+    <string name="select_timer2_duration_3">3. Select Timer 2 Duration</string>
+    <string name="show_timer2_duration_state">4. Appliance will be %s for Timer2 duration</string>
+    <string name="double_timer_count_5">5. Double Timer Count (0 for infinite)</string>
+    <string name="enter_combined_timer1_timer2_count">Enter Timer1 + Timer2 Count</string>
+    <string name="txtViewDoubleTimerTimer1Count">Timer1 will run %s</string>
+    <string name="txtViewDoubleTimerTimer2Count">Timer2 will run %s</string>
+
+    <string name="listitem_cardview_schedule_timer_type">Type</string>
+    <string name="listitem_cardview_delete_schedule_timer">X</string>
+    <string name="listitem_cardview_recurrence_start_end_date">dd Mon YYYY</string>
+    <string name="listitem_cardview_recurrence_to_msg">to</string>
+    <string name="listitem_cardview_futureScheduledTime_RecurringTime">11 May 2017 11:00 am</string>
+    <string name="listitem_cardview_right_arrow_content_description">Right Arrow</string>
+    <string name="listitem_cardview_enabled">Enabled</string>
+    <string name="listitem_cardview_skip_for_today">Skip For Today</string>
+
+    <string name="internet_mode">Internet Mode</string>
+    <string name="btn_after_google_sign_in">Signed in as %s</string>
+    <string name="btn_internet_mode_not_configured">Configure Internet Mode</string>
+    <string name="btn_internet_mode_configured">Internet Mode Configured by %s</string>
+    <string name="btn_remove_internet_mode_config">Remove Internet Mode Config</string>
+    <string name="btn_internet_mode_unavailable_for_portable_socket">Internet Mode Unavailable for Portable Sockets</string>
+
+    <string name="no_socket_selected_for_charging_auto_turn_off">No Socket selected for mobile charging auto-turn off</string>
+    <string name="charging_auto_turn_off_unavailable_for_fixed_sockets">Mobile Charging Auto Turn Off un-available for Fixed Sockets</string>
+    <string name="charging_auto_turn_off_msg">Mobile Charging Auto-turn off when battery at %s</string>
+    <string name="chkboxDisableWiFiOnceCharged_text">Turn Off WiFi once charged</string>
+    <string name="double_timer_unavailable_fixed_sockets">Double Timer is un-available for Fixed Sockets</string>
+    <string name="no_socket_selected_for_double_timer">No Socket selected for Double Timer</string>
+    <string name="btn_activate_stop_double_timer_activate">Activate Double Timer</string>
+    <string name="btn_activate_stop_double_timer_stop">Double Timer Active (Click to Stop)</string>
+
+    <string name="MobChargingAutoTurnOffServiceDescription">Handles Mobile Charging Auto Turn Off for Portable Sockets</string>
+
+</resources>

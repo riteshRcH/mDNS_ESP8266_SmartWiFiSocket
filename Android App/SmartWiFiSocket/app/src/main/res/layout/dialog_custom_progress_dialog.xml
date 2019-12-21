@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="22dp"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp" >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        android:layout_weight="0.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtViewProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="11dp"
+        android:paddingStart="11dp"
+        android:paddingRight="11dp"
+        android:paddingEnd="11dp"
+        android:gravity="center_vertical"
+        android:layout_weight="0.8"
+        android:background="@android:color/transparent" />
+ </TableRow>

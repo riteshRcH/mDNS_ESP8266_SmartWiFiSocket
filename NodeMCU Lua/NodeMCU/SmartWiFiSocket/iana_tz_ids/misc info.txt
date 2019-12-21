@@ -1,0 +1,11 @@
+https://askubuntu.com/questions/34925/organization-of-zoneinfo-folder
+https://stackoverflow.com/questions/10684563/java-systemv-timezones-and-jodatime
+https://github.com/michaelahlers/angular-timezones/issues/4
+
+note:
+	do not prepend zi/ to America/Argentina/ComodRivadavia as it has total length of 33 chars which exceeds 32 chars limit of SPI FS of ESP
+	do not prepend zi/ to America/North_Dakota/New_Salem as it has total length of 31 chars which exceeds 32 chars limit of SPI FS of ESP
+	do not prepend zi/ to America/Argentina/Rio_Gallegos as it has total length of 31 chars which exceeds 32 chars limit of SPI FS of ESP
+	do not prepend zi/ to America/Argentina/Bueno_Aires as it has total length of 31 chars which exceeds 32 chars limit of SPI FS of ESP
+	
+no need of above note as we always save the required timezone file into "localtime" file and save the IANA timezone identifier into initial_setup_done

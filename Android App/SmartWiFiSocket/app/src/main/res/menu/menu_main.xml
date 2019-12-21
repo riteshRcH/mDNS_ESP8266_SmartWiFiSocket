@@ -1,0 +1,73 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="in.co.unifytech.smartWiFiSocket.SmartWiFiSocketActivity">
+
+    <item
+        android:id="@+id/menu_item_select_socket"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_select_socket"
+        android:title="@string/menu_item_select_socket"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_item_refresh_all_tabs_after_data_retrieval"
+        android:orderInCategory="200"
+        android:icon="@mipmap/ic_retry"
+        android:title="@string/menu_item_refresh_all_tabs_after_data_retrieval"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_item_add_new_socket"
+        android:orderInCategory="300"
+        android:title="@string/menu_item_add_new_socket"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_item_search_available_WLAN_sockets"
+        android:orderInCategory="400"
+        android:title="@string/menu_item_search_available_WLAN_sockets"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_item_forget_a_configured_socket"
+        android:orderInCategory="500"
+        android:title="@string/menu_item_forget_a_socket"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_item_disconnect_from_current_socket"
+        android:orderInCategory="600"
+        android:title="@string/menu_item_disconnect_from_current_socket"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_item_storage_details"
+        android:orderInCategory="700"
+        android:title="@string/menu_item_storage_details"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_item_factory_reset_redo_initial_setup"
+        android:orderInCategory="800"
+        android:title="@string/menu_item_factory_reset_redo_initial_setup"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_item_wifi"
+        android:orderInCategory="900"
+        android:title="@string/menu_item_wifi"
+        app:showAsAction="never"/>
+
+    <!--<item
+        android:id="@+id/menu_item_download_apply_socket_software"
+        android:orderInCategory="1000"
+        android:title="@string/menu_item_download_apply_socket_software"
+        app:showAsAction="never" />-->
+
+    <!--<item
+        android:id="@+id/test_tz"
+        android:orderInCategory="1100"
+        android:title="test tz"
+        app:showAsAction="always" /> -->
+</menu>

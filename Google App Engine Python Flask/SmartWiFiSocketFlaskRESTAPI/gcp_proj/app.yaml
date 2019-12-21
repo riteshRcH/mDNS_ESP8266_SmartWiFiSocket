@@ -1,0 +1,37 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+env_variables:
+        SQLALCHEMY_DATABASE_URI: >-
+          mysql+pymysql://app:passwordForApPDBUserYo1259!@/unify_smart_wifi_socket?unix_socket=/cloudsql/unifysmartwifisocket:asia-northeast1:unify-smart-wifi-socket
+
+        CLOUD_SQL_CONNECTION_NAME: unifysmartwifisocket:asia-northeast1:unify-smart-wifi-socket
+
+        CLOUD_SQL_APP_USER: app
+        CLOUD_SQL_APP_PASSWORD: passwordForApPDBUserYo1259!
+
+        CLOUD_SQL_SOCKET_USER: socket
+        CLOUD_SQL_SOCKET_PASSWORD: passwordForSoCkeTDBUserYo1259!
+
+        CLOUD_SQL_DATABASE_NAME: unify_smart_wifi_socket
+
+beta_settings:
+    cloud_sql_instances: unifysmartwifisocket:asia-northeast1:unify-smart-wifi-socket
+
+# https://stackoverflow.com/questions/19623267/importerror-no-module-named-crypto-cipher
+libraries:
+- name: pycrypto
+  version: "2.6"
+- name: MySQLdb
+  version: "latest"
+
+# [START handlers]
+handlers:
+- url: /app/api/.*
+  script: main.app
+  secure : always
+- url: /socket/api/v1.0/.*
+  script: main.app
+  secure : optional
+# [END handlers]

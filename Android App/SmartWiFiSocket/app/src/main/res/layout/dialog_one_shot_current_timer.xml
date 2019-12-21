@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="@string/before_starting_timer_turn_appliance_1"/>
+
+        <ToggleButton
+            android:id="@+id/toggleBtnOneShotCurrentTimerBeforeState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"
+            android:textOff="@string/stateOFF"
+            android:textOn="@string/stateON"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="@string/then_run_timer_for_following_duration_2"/>
+
+        <mobi.upod.timedurationpicker.TimeDurationPicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeDurationPickerOneShotCurrentTimer"
+            android:layout_gravity="center_horizontal"
+            app:numPadButtonPadding="0dp"
+            app:timeUnits="hhmmss"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:id="@+id/txtViewOneShotCurrentTimerAfterStateMsg"
+            android:text="@string/after_timer_expires_turn_appliance_3"/>
+
+    </LinearLayout>
+</ScrollView>

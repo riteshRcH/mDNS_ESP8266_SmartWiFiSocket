@@ -1,0 +1,2 @@
+https://github.com/devyte/nodemcu-platform/wiki/How-to-build-ESPlorer-from-sources
+https://github.com/4refr0nt/ESPlorer
