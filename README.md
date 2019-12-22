@@ -1,4 +1,4 @@
-# Smart WiFi Socket using ESP8266 Micro-controller & NodeMCU Lua Firmware
+# Smart WiFi Socket using ESP8266 Micro-controller & NodeMCU Lua Firmware 2019
 
 * Discoverable over mDNS
 * Calendar synced one-shot & recurring schedules & Timers
