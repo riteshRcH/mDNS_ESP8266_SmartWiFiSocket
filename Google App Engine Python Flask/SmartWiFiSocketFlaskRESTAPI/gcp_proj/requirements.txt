@@ -1,4 +1,4 @@
-Flask==1.0
+Flask==2.2.5
 urllib==1.21.1
 six
 google-api-python-client
